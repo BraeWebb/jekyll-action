@@ -11,7 +11,7 @@ RUN apk add --update tzdata
 # Use curl to send API requests
 RUN apk add --update curl
 # Fork: Allow PDF document generation
-RUN apk add --update pandoc xvfb libfontconfig wkhtmltopdf
+RUN apk add --update pandoc wkhtmltopdf
 
 # debug
 RUN bundle version

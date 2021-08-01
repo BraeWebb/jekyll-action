@@ -102,7 +102,8 @@ if [ "${INPUT_KEEP_HISTORY}" = true ]; then
 else 
   echo "::debug::Initializing new repo"
   LOCAL_BRANCH="main"
-  git init -b $LOCAL_BRANCH
+  git init
+  git checkout -b $LOCAL_BRANCH
   PUSH_OPTIONS="--force"
   COMMIT_OPTIONS=""
 fi
